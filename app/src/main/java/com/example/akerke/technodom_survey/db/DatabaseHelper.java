@@ -7,14 +7,15 @@ import android.arch.persistence.room.InvalidationTracker;
 import android.arch.persistence.room.RoomDatabase;
 
 import com.example.akerke.technodom_survey.db.model.DataModel;
+import com.example.akerke.technodom_survey.db.model.ClientModel;
 
 
-
-
-@Database(entities = { DataModel.class }, version = 1, exportSchema = false)
+@Database(entities = { DataModel.class, ClientModel.class}, version = 2, exportSchema = false)
 public abstract class DatabaseHelper extends RoomDatabase {
 
     public abstract DataDao getDataDao();
+
+    public abstract ClientDao getClientDao();
 
     @Override
     protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration config) {

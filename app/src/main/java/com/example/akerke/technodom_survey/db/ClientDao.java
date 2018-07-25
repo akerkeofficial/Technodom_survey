@@ -5,23 +5,20 @@ import android.arch.persistence.room.Delete;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
 
+
 import com.example.akerke.technodom_survey.db.model.ClientModel;
-import com.example.akerke.technodom_survey.db.model.DataModel;
 
 import java.util.List;
 
 
-
-
 @Dao
-public interface DataDao {
+public interface ClientDao {
     @Insert
-    void insert(DataModel dataModel);
+    void insert(ClientModel clientModel);
 
     @Delete
-    void delete(DataModel dataModel);
+    void delete(ClientModel clientModel);
 
-    @Query("SELECT * FROM DataModel")
-    List<DataModel> getAllData();
-
+    @Query("SELECT * FROM ClientModel")
+    List<ClientModel> getAllData();
 }

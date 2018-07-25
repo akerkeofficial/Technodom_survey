@@ -20,6 +20,9 @@
         <activity android:name=".ui.main.User" />
         <activity android:name=".ui.main.Admin" />
         <activity android:name=".ui.main.Consultant" />
+        <activity android:name=".ui.main.Client" />
+        <activity android:name=".ui.main.Consultant_User" />
+        <activity android:name=".ui.AddDataActivity" />
     </application>
 
 </manifest>
