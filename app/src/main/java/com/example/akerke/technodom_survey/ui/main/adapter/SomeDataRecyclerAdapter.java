@@ -1,6 +1,5 @@
 package com.example.akerke.technodom_survey.ui.main.adapter;
 
-
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;

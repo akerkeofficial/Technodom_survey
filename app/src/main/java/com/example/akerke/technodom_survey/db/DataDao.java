@@ -10,10 +10,6 @@ import com.example.akerke.technodom_survey.db.model.DataModel;
 import java.util.List;
 
 
-/**
- * Created by gleb on 11/16/17.
- */
-
 @Dao
 public interface DataDao {
     @Insert

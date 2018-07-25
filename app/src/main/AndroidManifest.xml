@@ -17,8 +17,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.AddDataActivity" />
+        <activity android:name=".ui.main.User" />
         <activity android:name=".ui.main.Admin" />
+        <activity android:name=".ui.main.Consultant" />
     </application>
 
 </manifest>
